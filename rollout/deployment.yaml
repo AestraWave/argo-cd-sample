@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ktor-sample
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: ktor-sample
+  template:
+    metadata:
+      labels:
+        app: ktor-sample
+    spec:
+      containers:
+        - image: vishal4590/ktor-sample:v1
+          name: ktor-sample
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
