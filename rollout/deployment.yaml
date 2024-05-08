@@ -15,7 +15,7 @@ spec:
         app: ktor-sample
     spec:
       containers:
-        - image: vishal4590/ktor-sample:v1
+        - image: vishal4590/ktor-sample:v2
           name: ktor-sample
           ports:
             - name: http
