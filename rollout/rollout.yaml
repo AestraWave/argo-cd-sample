@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: ktor-sample
-        image: vishal4590/ktor-sample:v2
+        image: vishal4590/ktor-sample:v1
         ports:
         - name: http
           containerPort: 8080
